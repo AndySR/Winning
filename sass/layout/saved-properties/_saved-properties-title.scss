@@ -1,0 +1,19 @@
+.saved-properties--title {
+  &--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    display: block;
+    font-size: 3rem;
+    font-family: $font-primary;
+    color: $color-secondary;
+    text-transform: capitalize;
+    font-weight: 700;
+    &__icon {
+      margin-right: 2rem;
+      color: $color-pink-light;
+    }
+  }
+}

@@ -1,0 +1,260 @@
+.profile__content {
+
+  &__wrap {
+    min-height: 55rem;
+  }
+  &__formbox {
+    padding: 2rem 5rem;
+    display: block;
+
+    &__common-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $color-secondary;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      &__text {
+        color: currentColor;
+        font-size: inherit;
+        font-weight: 500;
+
+      }
+    }
+    &__line {
+      border: .05rem solid $color-secondary-2;
+    }
+  }
+  &__setting-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__info-wrapper {
+      margin: 2.4rem 2rem 2.4rem 4rem;
+
+    }
+    &__info-box {
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      &__label {
+        display: block;
+        width: 12rem;
+        line-height: 2rem;
+        padding: 2rem 0;
+        text-align: center;
+        background-color: $color-secondary;
+        color: $color-white;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      &__text {
+        flex-grow: 1;
+        margin-left: .8rem;
+        line-height: 2rem;
+        color: $color-secondary;
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: .1rem;
+        padding: 2rem 0 2rem 2.2rem;
+        border-bottom: 1px solid $color-secondary-2;
+      }
+    }
+  }
+
+  &__operational-records {
+    &__tips,
+    &__notme {
+      font-size: 1.2rem;
+      color: $color-blue;
+    }
+    &__tips {
+      padding-left: 1rem;
+    }
+
+    &__contentBox {
+
+      &__list {
+        width: 100%;
+        margin-top: 2.4rem;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        tbody {
+          color: $color-secondary;
+          th{
+            color: $color-white;
+            font-size: 1.5rem;
+            line-height: 4.8rem;
+            text-align: center;
+            background-color: $color-secondary;
+          }
+          td {
+            color: currentColor;
+            line-height: 4.8rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-bottom: 1px solid $color-grey-light-4;
+          }
+        }
+
+      }
+    }
+  }
+
+
+  &__binding-account {
+    &__tip {
+      background-color: rgba($color-red, .2);
+      padding: .5rem 1rem;
+      border-radius: .2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      a,
+      span{
+        color: $color-red-1;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+      &__close {
+        text-align: right;
+      }
+      &__history {
+        color: $color-blue!important;
+      }
+    }
+    &__complete {
+      font-size: 1.5rem;
+      &__red {
+        color: $color-red-1;
+        font-weight: 200;
+      }
+    }
+
+    &__wrapper {
+      // TODO:
+    }
+    &__contentBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    &__itemBox {
+      display: flex;
+      // align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid $color-grey-light-4;
+      &__left {
+        margin-right: 2rem;
+        &__icon {
+          font-size: 3rem;
+          color: $color-grey-light-4;
+        }
+      }
+      &__center {
+        margin-right: auto;
+        &__top {
+          font-size: 1.5rem;
+          color: $color-secondary;
+          font-weight: 200;
+          &__title {
+            color: currentColor!important;
+            font-size: inherit;
+            font-weight: 700;
+          }
+          &__text {
+            font-size: 1.2rem;
+            font-family: $font-primary;
+            font-weight: 500;
+            color: currentColor;
+            margin-right: .5rem;
+          }
+        }
+        &__bottom {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $color-secondary-2;
+          &__text{
+            font-size: 1.2rem;
+            font-family: $font-primary;
+            font-weight: 500;
+            color: currentColor;
+            margin-right: .5rem;
+          }
+          &__notbounding {
+            font-size: 1.2rem;
+            color: $color-secondary;
+            margin-left: .5rem;
+            border-bottom: 1px solid $color-secondary;
+            cursor: pointer;
+          }
+
+          &__account-box {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+          }
+          &__account-item {
+            display: flex;
+            align-items: center;
+            &__left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 1rem;
+              background: $color-secondary-2;
+              width: 7rem;
+              height: 7rem;
+              border-radius: 50%;
+            }
+            &__icon {
+              font-size: 5rem;
+              color: $color-white;
+            }
+            &__right {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              &__title{
+                color: $color-secondary;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: .5rem;
+              }
+              &__status{
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: $color-red-1;
+                margin-bottom: 1rem;
+              }
+              &__button{
+                padding: .2rem;
+                font-size: 1rem;
+                border: 1px solid $color-grey-light-4;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      &__right {
+        &__change {
+          padding: .5rem 1rem;
+          font-size: 1.5rem;
+          color: $color-secondary;
+          font-weight: 500;
+          border: 1px solid $color-secondary;
+          border-radius: 2rem
+        }
+      }
+    }
+  }
+}

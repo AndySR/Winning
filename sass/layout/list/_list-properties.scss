@@ -1,0 +1,188 @@
+.list-section-properties {
+  &--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: $color-grey-light-3;
+    border-bottom: 1px solid $color-grey-light-4;
+    &__filters {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        padding: 1rem 4rem 1rem 0;
+        a {
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $color-secondary;
+        }
+      }
+      &__content {
+        display: flex;
+        align-items: center;
+        &__item {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: .2rem .5rem;
+          border-radius: 2px;
+          &:hover {
+            background: $color-secondary;
+            color: $color-white;
+          }
+          &:not(last-child) {
+            margin-right: .5rem;
+
+          }
+
+          &--arrow {
+            margin-left: .5rem;
+            font-size: 1.5rem;
+          }
+        }
+        &__item-active {
+          background: $color-secondary;
+          color: $color-white;
+        }
+      }
+    }
+    &__results {
+      &__content {
+        font-size: 1.5rem;
+        font-weight: 200;
+        strong {
+          color: $color-pink;
+        }
+      }
+    }
+  }
+
+  &--items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 2rem;
+
+    &__item {
+      margin-top: 2rem;
+      // border: 1px solid $color-grey-light-4;
+      width: 100%;
+      background: white;
+      display: flex;
+      flex-direction: row;
+      // border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        background: $color-grey-light-3;
+      }
+      &--img {
+        height: 18rem;
+        margin-right: 3rem;
+        img {
+          height: 100%;
+        }
+      }
+      &--details {
+        padding-top: 2rem;
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+        h5 {
+          font-size: 1.5rem;
+          font-weight: 200;
+          margin-bottom: 2rem;
+        }
+        &--feature {
+          a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 1rem;
+            span {
+              display: inline-block;
+              font-size: inherit;
+              margin-right: 0.2rem;
+            }
+          }
+        }
+        &--surrounding {
+          position: absolute;
+          top: 50%;
+          right: 20%;
+          &__content {
+            a {
+              text-decoration: none;
+              display: inline-block;
+              font-size: 2rem;
+              height: 2rem;
+              width: 2rem;
+              margin-right: 1.5rem;
+              span {
+                display: inline-block;
+              }
+              &:hover {
+                color: $color-primary;
+              }
+            }
+          }
+        }
+      }
+      .heart--favorite {
+        position: absolute;
+        font-size: 2rem;
+        top: 1.5rem;
+        right: 3rem;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+      .property--detail {
+        position: absolute;
+        font-size: 2rem;
+        display: block;
+        height: 4rem;
+        width: 9rem;
+        bottom: 2rem;
+        right: 2rem;
+        transition: all 0.5s;
+        span {
+          transition: all 0.5s;
+        }
+        &:hover {
+          color: $color-primary;
+          border-bottom: 0.2rem solid $color-primary;
+        }
+        &:hover span {
+          padding-left: 1rem;
+        }
+      }
+      .property--compare {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 8rem;
+      }
+      .property--rent-type {
+        display: block;
+        padding: .2rem 1rem;
+        position: absolute;
+        left: 0;
+        top: .1rem;
+        background: rgba($color-secondary, .8);
+        span {
+          font-size: 1.2rem;
+          color: $color-white;
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

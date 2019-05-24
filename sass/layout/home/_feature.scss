@@ -1,0 +1,38 @@
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width:992px){
+      flex-direction: row;
+  }
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  @media screen and (min-width:992px){
+      flex: 1 1 30%;
+      padding: 1rem 1rem;
+  }
+
+  &__icon {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    font-size: 7rem;
+    line-height: 8rem;
+    text-align: center;
+    &--train,
+    &--feature,
+    &--map {
+      color: $color-primary-dark-1;
+    }
+    &:hover {
+      animation: pulsate 1.5s infinite;
+    }
+
+  }
+}

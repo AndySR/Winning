@@ -1,0 +1,68 @@
+//COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+$color-primary-dark-1: #6d5d4b;
+
+$color-secondary: #101d2c;
+$color-secondary-1: rgba($color-secondary, .7);
+$color-secondary-2: rgba($color-secondary, .8);
+
+$color-pink: #eb2f64;
+$color-pink-light: #ff3366;
+$color-pink-dark: #ba265d;
+
+$color-red: red;
+$color-red-1: #7C2A2A;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-3: #f2f5f7;
+$color-grey-light-4: #ccc;
+$color-grey-light-5:#dcdcdc;
+$color-grey-light-6:#eae7e1;
+$color-grey-light-7:#f6f4f0;
+$color-grey-light-8:#f8fafc;
+$color-grey-light-2: #aaa;
+$color-grey-light-9: #a9adb2;
+
+
+$color-grey-dark-3: #333;
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+
+$color-white: #fff;
+
+$color-black: #000;
+$color-black-light-1: #333235;
+$color-black-light-2: #6a6a6b;
+
+$color-yellow: #ffd119;
+$color-brown : #f26522;
+
+$color-purple: #b85c8a;
+
+$color-blue: #69f;
+$color-blue-light: #a3a3ff;
+
+$color-green: #71c6a3;
+$color-cover-home: #2d3047;
+
+$color-background:#f2f5f7;
+$color-background-1: #f9f9fa;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+$line: 1px solid var($color-grey-light-2);
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;

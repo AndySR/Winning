@@ -1,0 +1,10 @@
+.map-section{
+  &__map {
+    width: 70%;
+    height: 100%;
+    align-self: stretch;
+    iframe {
+      height: 100%;
+    }
+  }
+}

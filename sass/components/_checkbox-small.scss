@@ -1,0 +1,70 @@
+.checkbox-small-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    color: $color-secondary;
+    &:not(last-of-type){
+      margin-right: 1rem;
+    }
+  }
+
+  .checkbox-small--button {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: $color-white;
+    transition: all .15s;
+    border: 1px solid $color-grey-light-4;
+    padding: .1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: .3rem;
+      background: $color-pink;
+
+      transform: translate(.4rem, 1.1rem) rotate(-45deg);
+      transform-origin: left;
+      transition: all .15s;
+      transition-delay: 0s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: .3rem;
+      background: $color-pink;
+
+      transform: translate(.1rem, .6rem) rotate(45deg);
+      transform-origin: left;
+      transition: all .15s;
+      transition-delay: .15s;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    & ~ .checkbox-small--button {
+      &::before {
+        width: .7rem;
+        transition-delay: 0s;
+      }
+      &::after {
+        width: 1.3rem;
+        transition-delay: .15s;
+      }
+    }
+  }
+  input[type="checkbox"]:checked + .checkbox-small--button {
+    background: rgba($color-secondary, .8);
+    box-shadow: .2rem .2rem .4rem rgba($color-black, .1);
+  }
+}

@@ -1,0 +1,58 @@
+.header-saved-properties {
+  background-color: $color-secondary;
+}
+.saved-properties {
+  &--section {
+    // padding: 0 10rem;
+    background-color: $color-grey-light-3;
+    display: block;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &--title {
+    // background-image: linear-gradient(to right bottom, $color-secondary-2, $color-secondary);
+    padding: 2rem 10rem;
+  }
+  &--dateFilter {
+    padding: 2rem 10rem;
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $color-white;
+      border: 1px solid $color-grey-light-3;
+      border-radius: .2rem;
+      box-shadow: $shadow-light;
+    }
+  }
+
+  &--mapFilter {
+    padding: 2rem 10rem;
+    max-height: 20rem;
+    overflow: hidden;
+    &__container{
+      // TODO:
+    }
+  }
+
+  &--timeline {
+    padding: 2rem 10rem;
+    &__container {
+      // display: flex;
+      // flex-direction: column;
+    }
+  }
+  &--typeFilter {
+    padding: 2rem 10rem;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+  }
+
+}

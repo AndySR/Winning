@@ -1,0 +1,36 @@
+.section-features {
+  background-color: $color-grey-light-1;
+  padding: 1rem 2rem;
+  @media screen and (min-width: 992px) {
+    padding: 6rem 10rem;
+  }
+}
+
+.section-gallery {
+  background-color: $color-white;
+  padding: 6rem 10rem;
+}
+
+.section-recommend {
+  background-color: $color-grey-light-3;
+  padding: 6rem 10rem;
+  .recommend-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .recommend-title {
+      // margin-bottom: 2rem;
+    }
+    .recommend-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.section-hot {
+  position: relative;
+  padding: 6rem 1px;
+}

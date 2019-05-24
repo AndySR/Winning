@@ -1,0 +1,21 @@
+.header-profile {
+  background-color: $color-secondary;
+}
+
+.profile {
+  min-height: 60rem;
+  background-color: $color-grey-light-8;
+  padding: 0 10rem;
+  &__container {
+    display: flex;
+    // align-items: center;
+  }
+  &__sidebar {
+    width: 20%;
+    align-self: stretch;
+    background-color: $color-grey-light-3;
+  }
+  &__content {
+    flex-grow: 1;
+  }
+}

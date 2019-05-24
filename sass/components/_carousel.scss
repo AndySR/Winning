@@ -1,0 +1,132 @@
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    width: 33.2%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    // &:hover {
+    //   background: rgba($color-white, 1);
+    // }
+
+    &__img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      transition: all 0.4s;
+    }
+
+    &__cover {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      z-index: 20;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: $color-white;
+      &__addr {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        display: block;
+        color: currentColor;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.5rem;
+      }
+      &__sub {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: block;
+        color: currentColor;
+        letter-spacing: 0.1rem;
+      }
+      &__param {
+        &--item {
+          display: inline-block;
+          color: currentColor;
+          font-size: 2rem;
+          &:not(:last-child) {
+            padding-right: 1.5rem;
+          }
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            font-size: 2.5rem;
+            padding-right: 1rem;
+          }
+          &:hover {
+            color: currentColor;
+          }
+        }
+      }
+    }
+  }
+  &__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-secondary, 0.6);
+    z-index: 10;
+    transition: all 1s;
+  }
+  &__item:hover::before {
+    background: rgba($color-secondary, 0);
+  }
+  &__item:hover > &__item__img {
+    transform: scale(1.2);
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 30;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color-white, 0.8);
+    transition: all 0.4s;
+    &--left {
+      left: 0;
+      transform: translate(1px, 50%);
+    }
+    &--right {
+      right: 0;
+      transform: translate(-1px, 50%);
+    }
+    &--item--left {
+      margin-left: -10%;
+    }
+    &--item--right {
+      margin-right: -10%;
+    }
+    &--item {
+      display: block;
+      color: $color-secondary;
+      font-size: 4rem;
+
+      span {
+        display: block;
+        color: currentColor;
+      }
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+    &:hover {
+      background: rgba($color-white, 1);
+    }
+  }
+}

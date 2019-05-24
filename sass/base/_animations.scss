@@ -1,0 +1,59 @@
+@keyframes moveInBottom {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: calc(-50%);
+    }
+    40% {
+        top: calc(-75%);
+    }
+    50% {
+        top: calc(-100%);
+    }
+    60% {
+        top: calc(-130%);
+    }
+    70% {
+        top: calc(-155%);
+    }
+    80% {
+        top: calc(-190%);
+        opacity: 1;
+    }
+    81% {
+        top: calc(-180%);
+        opacity: 0;
+    }
+    82% {
+        top: calc(56%);
+        opacity: 0;
+    }
+    83% {
+      top: calc(56%);
+      opacity: 1
+    }
+    91% {
+      top: calc(25%);
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    transform: translateY(-.5rem);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+    transform: translateY(0);
+  }
+}
